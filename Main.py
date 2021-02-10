@@ -28,11 +28,3 @@ if __name__ == "__main__":
             val, movimiento = game.minimax(game.curr_node, 3, -math.inf, math.inf, True)
             print("El rival ha movido la  ", movimiento[0], "a la", movimiento[1])
             is_valid = game.movimiento(movimiento[0], movimiento[1])
-               
-
-            
-    # pp.pprint(game.board)
-
-    # print(game.minimax(game.curr_node, 4, -math.inf, math.inf, False))
-
-    # pp.pprint(game.get_state_board(game.curr_node.state))
