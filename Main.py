@@ -17,6 +17,7 @@ if __name__ == "__main__":
             is_valid = False
             while not is_valid:
                 try:
+                     pp.pprint(game.tablero(game.curr_node.state))
                     init_coord = input("Escriba que pieza quiere mover: ")
                     init_coord = tuple(int(n) for n in init_coord.split(','))
                     dest_coord = input("Ingrese la coordenada destino: ")
