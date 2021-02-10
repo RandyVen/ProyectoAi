@@ -1,6 +1,6 @@
 import math
 import pprint 
-from tree import Node
+from arbol import Node
 from copy import deepcopy
 class Game(object):
     def __init__(self, init_state):
