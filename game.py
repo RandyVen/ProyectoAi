@@ -174,8 +174,6 @@ class Game(object):
             if v >= beta:
                 return v, movimiento
     def movimientos_validos(self, node:Node, coord:tuple, hoop:bool=False, valid_dests:list=[]):
-       
-
         self.verificar_direccion(coord=coord, node=node, delta_x=1, 
                             delta_y=0, hoop=hoop, valid_dests=valid_dests) 
         self.verificar_direccion(coord=coord, node=node, delta_x=-1, 
@@ -192,5 +190,4 @@ class Game(object):
                             delta_y=-1, hoop=hoop, valid_dests=valid_dests) 
         self.verificar_direccion(coord=coord, node=node, delta_x=-1, 
                             delta_y=1, hoop=hoop, valid_dests=valid_dests)
-
         return valid_dests
